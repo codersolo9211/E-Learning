@@ -5,7 +5,7 @@ import { CoursePurchase } from "../models/coursePurchase.model.js";
 import { Lecture } from "../models/lecture.model.js";
 import { User } from "../models/user.model.js";
 dotenv.config();
-// console.log("🔐 Stripe Secret Key:", process.env.STRIPE_SECRET_KEY);
+
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export const createCheckoutSession = async (req, res) => {
